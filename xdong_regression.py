@@ -36,7 +36,9 @@ def plot_regression_line(x, y, b):
     plt.plot(x, y_pred, color = "g")
 
     #putting labels
-    plt.xlabel('K/A')
+    # KA = kill and assist grade after calculation
+    #D = death
+    plt.xlabel('K&A')
     plt.ylabel('D')
 
     #function to show plotting
@@ -45,7 +47,7 @@ def plot_regression_line(x, y, b):
 def main():
     #observations
     #x= death
-    #y= 1(kill)+0.5(support kill)
+    #y= 1(kill)+0.5(assist kill)
     x = np.array([2, 2, 11, 8, 8, 15, 11, 1, 6, 4])
     y = np.array([6.5, 11, 10.5, 27, 19, 21.5, 2, 6.5, 2, 5.5])
 
